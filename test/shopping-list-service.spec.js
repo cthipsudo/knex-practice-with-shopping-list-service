@@ -90,8 +90,8 @@ describe.only(`Shopping service tests`, function () {
       return ShoppingListService.deleteShoppingListItem(db, itemId)
         .then(() => ShoppingListService.getShoppingListItems(db))
         .then( data => {
-          //console.log(data);
-          //console.log(listFiltered);
+          // console.log(data);
+          // console.log(listFiltered);
           expect(data).to.eql(listFiltered);
         });
     });

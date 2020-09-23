@@ -17,11 +17,11 @@ const ShoppingListService = {
   },
 
   deleteShoppingListItem(knex, id) {
-    return knex.from('shopping_list').where({ id }).delete();
+    return knex.from('shopping_list').where('id', id).delete();
   },
 
   updateShoppingListItem(knex, id, newShoppingItem) {
-    return knex.from('shopping_list').where({ id }).update(newShoppingItem);
+    return knex.from('shopping_list').where('id', id).update(newShoppingItem);
   },
 };
 
