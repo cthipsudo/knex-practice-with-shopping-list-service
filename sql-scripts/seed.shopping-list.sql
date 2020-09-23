@@ -1,3 +1,5 @@
+-- Clears shopping_list data
+TRUNCATE shopping_list;
 
 INSERT INTO shopping_list (name, price, category, checked, date_added)
 VALUES
